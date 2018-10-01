@@ -298,3 +298,10 @@ function validateNoteTitle(editNoteModal){
 	}
 	return result;
 }
+
+function validate(){
+	var data=ajaxSyncCallGet('/validate/session', '', '');
+	if(data){
+		window.location='/';
+	}
+}
