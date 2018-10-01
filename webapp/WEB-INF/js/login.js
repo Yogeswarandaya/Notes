@@ -168,3 +168,10 @@ function removeClass(formSelector, registerButton){
 	formSelector.removeClass('loading');
 	registerButton.removeClass('loading');
 }
+
+function validate(){
+	var data=ajaxSyncCallGet('/validate/session', '', '');
+	if(!data){
+		window.location='/note';
+	}
+}
