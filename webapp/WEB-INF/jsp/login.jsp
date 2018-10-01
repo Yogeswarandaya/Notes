@@ -14,7 +14,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Login</title>
 </head>
-<body>
+<body onpageshow="validate()">
 	<div class="login-div">
 		<c:if test="${not empty validationError}">
 			<input type="hidden" id="validation-error" value="${validationError}"
