@@ -1,0 +1,331 @@
+body {
+	padding: 0px;
+}
+
+.navbar-header .navbar-brand {
+	color: #ccc;
+}
+
+.nav.navbar-nav.navbar-right a {
+	color: #ccc;
+}
+
+/* Notes */
+.section-group {
+	height: 92vh;
+	border: 1px solid #bbbaba;
+	width: 22%;
+	top: 49px;
+	padding-top: 15px;
+	position: fixed;
+}
+
+.glyphicon-plus-sign.custom-align {
+	padding-right: 8px;
+	top: 1px;
+}
+
+.add-section {
+	padding-bottom: 14px;
+	padding-left: 0px;
+}
+
+.section:HOVER {
+	box-shadow: 0px 0px 1px 2px #bbbaba;
+}
+
+.section.active-section {
+	box-shadow: 0px 0px 1px 2px #bbbaba;
+}
+
+.section {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #bbbaba;
+	padding-left: 18px;
+	cursor: pointer;
+}
+
+.section:hover .glyphicon-trash, .section.active-section .glyphicon-trash
+	{
+	display: block !important;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+.section-group-div {
+	margin: 0px -16px;
+	border-top: 1px solid #bbbaba;
+	height: 93%;
+	overflow-y: auto;
+}
+
+.notes-group {
+	top: 49px;
+	padding-top: 15px;
+	width: 78%;
+	left: 22%;
+}
+
+.note-div:hover {
+	box-shadow: 0px 0px 12px 3px #bbbaba;
+}
+
+.note-div {
+	border: 1px solid #bbbaba;
+	display: inline-block;
+	width: 32%;
+	padding: 9px;
+	margin-bottom: 10px;
+	height: 35vh;
+	margin-right: 7px;
+	box-shadow: 0px 0px 7px 0px #bbbaba;
+	cursor: pointer;
+	position: relative;
+}
+
+.note-div .note-title {
+	height: 3vh;
+}
+
+.note-content {
+	display: grid;
+	padding-top: 10px;
+	overflow: hidden;
+	height: 27vh;
+	line-height: 22px;
+}
+
+.note-content span {
+	height: inherit;
+}
+
+.title {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.note-div:hover .glyphicon-trash {
+	display: block !important;
+	cursor: pointer;
+}
+
+.add-note-div {
+	margin-top: -5px;
+	padding-bottom: 8px;
+}
+
+.add-note {
+	padding-right: 5px;
+}
+
+.edit-note-title:FOCUS {
+	border-bottom: 1px solid #afafaf;
+}
+
+.edit-note-title:empty:before {
+	content: 'Title';
+	color: #bbbaba;
+}
+
+.edit-note-content:empty:before {
+	content: 'Notes';
+	color: #bbbaba;
+}
+
+.modal-title {
+	font-size: 16px;
+	font-weight: 600;
+	width: auto;
+	display: inline-block;
+}
+
+.p-r-5 {
+	padding-right: 5px;
+}
+
+.p-l-5 {
+	padding-left: 5px;
+}
+
+.edit-note-content {
+	min-height: 34vh;
+}
+
+.edit-note-content, .edit-note-title {
+	outline: none;
+}
+
+.section-title-header .glyphicon-ok {
+	cursor: pointer;
+}
+
+.glyphicon-remove-sign {
+	cursor: pointer;
+}
+
+.login-div {
+	height: auto;
+	box-shadow: 0px 1px 4px 3px #afafaf;
+	border-radius: 5px;
+	width: 69%;
+	margin: 0 auto;
+	margin-top: 2%;
+}
+
+.form-login, .form-new-user {
+	padding: 24px;
+}
+
+.username-div {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.password-div, .submit-div, .confirm-password-div {
+	margin: 0 auto;
+	width: 50%;
+	padding-top: 21px;
+}
+
+.username-text, .password-text, .confirm-password-text {
+	width: 88%;
+	border-radius: 5px;
+	height: 33px;
+	margin-top: 5px;
+	resize: vertical;
+}
+
+.submit-button {
+	width: 21%;
+	border-radius: 5px;
+	height: 33px;
+	margin: 0 auto;
+	background: #0c86c7;
+	color: #fff;
+	border: #0c86c7;
+}
+
+.new-user {
+	cursor: pointer;
+}
+
+.login-div {
+	height: auto;
+}
+
+.back-but {
+	cursor: pointer;
+}
+
+.small.modal {
+	text-align: center;
+	padding: 0 !important;
+}
+
+.small.modal:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -4px;
+}
+
+.small .modal-dialog {
+	width: auto;
+}
+
+.small .modal-dialog {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.small .modal-footer {
+	border-top: none;
+}
+
+.small .modal-content, .large .modal-content {
+	border-radius: 0px;
+	font-size: 14px;
+}
+
+.small .modal-header {
+	padding: 12px;
+}
+
+.small .modal-footer .large .modal-footer {
+	padding: 7px;
+}
+
+.message-modal .modal-body {
+	padding-top: 29px;
+}
+
+.large .modal-dialog {
+	width: 38%;
+}
+
+.large .modal-header {
+	padding: 10px 12px;
+}
+
+.large .modal-body {
+	min-height: 42vh;
+}
+
+.edit-note .glyphicon-ok {
+	padding-left: 6px;
+	font-size: 12px;
+}
+
+.save-button {
+	background: #337ab7;
+	color: #fff;
+}
+
+.createddate {
+	position: relative;
+	right: 22px;
+	font-size: 10.4px;
+	font-style: italic;
+	top: 4px;
+}
+
+.note-footer {
+	bottom: 8px;
+	position: absolute;
+	right: 3%;
+}
+
+.modifieddate {
+	font-size: 10.4px;
+	font-style: italic;
+}
+
+.disabled {
+	opacity: 0.5;
+	cursor: disabled;
+}
+
+.delete-section-modal .glyphicon-exclamation-sign {
+	padding-right: 5px;
+	top: 3px;
+}
+
+.loading .fa-spin {
+	margin-left: -4px;
+	margin-right: 7px;
+}
+
+.register.loading .fa-spin {
+	display: inline-block !important;
+}
+
+.title-div {
+	width: 60%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+}
