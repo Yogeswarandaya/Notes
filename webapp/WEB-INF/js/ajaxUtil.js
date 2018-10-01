@@ -84,6 +84,21 @@ function ajaxCallDelete(action, dataValue, loaderID, callBack){
 	});
 }
 
+function ajaxSyncCallGet(action, dataValue, loaderID){
+	var result;
+	$.ajax({
+		type : 'get',
+		async: false,
+		url : action,
+		data : dataValue,
+		complete : function() {$(loaderID).css('display', 'none');},
+		success : function(dt, status, request) {
+			result=dt;
+		}
+	});
+	return result;
+}
+
 function showMessageModal(message){
 	$('#message-modal').find('.modal-body').text(message);
 	$('#message-modal').modal('show');
