@@ -116,4 +116,11 @@ public class LoginController {
 		return new ModelAndView(Constant.LOGINPAGE);
 	}
 	
+	@RequestMapping(value="validate/session", method=RequestMethod.GET)
+	@ResponseBody
+	public Boolean validateSession(){
+		HttpServletRequest httpServletRequest = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+		return Utils.checkNull(httpServletRequest.getSession(false));
+	}
+	
 }
